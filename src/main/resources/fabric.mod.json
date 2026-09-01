@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "unlocked-mouse",
+  "version": "${version}",
+  "name": "UnlockedMouse",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/unlocked-mouse/icon.png",
+  "environment": "client",
+  "entrypoints": {
+  },
+  "mixins": [
+    "unlocked-mouse.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
