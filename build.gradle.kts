@@ -73,10 +73,6 @@ tasks.withType<JavaCompile>().configureEach {
     options.release.set(targetJavaVersion)
 }
 
-tasks.withType<KotlinCompile>().configureEach {
-    compilerOptions.jvmTarget.set(JvmTarget.fromTarget(targetJavaVersion.toString()))
-}
-
 tasks.jar {
     from("LICENSE") {
         rename { "${it}_${project.base.archivesName.get()}" }
